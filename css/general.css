@@ -46,8 +46,8 @@ body                          {    margin: 0;
                                    font-family: 'open_sansregular';
                               }
 
-p                             {    color: #000;}
-h1, h2, h3, h4, h5, p         {    margin: 0; font-family: 'open_sansregular';}
+p                             {    color: #000000;}
+h1, h2, h3, h4, h5, p         {    margin: 0; font-family: 'open_sansregular'; color: #000000;}
 a                             {    text-decoration: none;}
 strong                        {    font-weight: 900;}
 ul                            {    padding: 0;}
@@ -84,6 +84,12 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 
 .float-right                  {    float: right;}
 
+
+h2 {
+    font: 30px 'open_sansregular';
+    margin: 10px 0;
+    text-align: left;
+}
 
 @media (max-width: 1250px) {
 }
@@ -381,6 +387,52 @@ ul.sub li:before            {
                                         {    background: url("../img/slider/arrowLeft.png") }
 .slick-next:hover, .slick-next:active, .slick-next:focus
                                         {    background: url("../img/slider/arrowRight.png") }
+
+
+
+/* --------------------------------------
+   News
+   -------------------------------------- */
+
+.news            {
+                     margin-top: 10px;
+                     position: relative;
+                 }
+.newsBlock       {
+                     width: 33%;
+                     float: left;
+                     padding-right: 20px;
+                     text-align: left;
+                     margin-bottom: 25px;
+                     margin-top: 10px;
+                 }
+.newsBlock .date {
+                     color: #505050;
+                     font-size: 13px;
+                     display: block;
+                     margin-bottom: 5px;
+                 }
+.newsBlock h3    {
+                     font: 14px 'open_sansregular';
+                     : ;
+                     color: #1F61EC;
+                     font-weight: normal;
+                     display: inline;
+                     border-bottom: 1px solid rgba(31, 97, 236, .5);
+                 }
+.newsBlock p     {
+                     font-size: 13px;
+                     margin-top: 10px;
+                 }
+.allNews         {
+                     position: absolute;
+                     right: 0;
+                     top: 10px;
+                     font-size: 14px;
+                     color: #000;
+                     display: inline;
+                     border-bottom: 1px solid rgba(0, 0, 0, .5);
+                 }
 /*---------------------------------------------------------------*/
 
 /*---------------------------------------------------------------*/
