@@ -411,10 +411,12 @@ ul.sub li:before            {
     font: 14px 'open_sansregular';;
     color: #1F61EC;
     font-weight: normal;
-    margin-bottom: 5px;
+    display: inline;
+    border-bottom: 1px solid rgba(31, 97, 236, .5);
 }
 .newsBlock p {
     font-size: 13px;
+    margin-top: 10px;
 }  
 /*---------------------------------------------------------------*/
 
