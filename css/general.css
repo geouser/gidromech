@@ -34,7 +34,9 @@
 
 
 /*General styles*/
+
 html, body                    {    }
+
 body                          {    margin: 0;
                                    padding: 0;
                                    -ms-overflow-x: hidden;
@@ -432,7 +434,7 @@ ul.sub li:before            {
                                       position: absolute;
                                       width: 13px;
                                       height: 8px;
-                                      right: 100%;
+                                      left: -15px;
                                       top: 50%;
                                       margin-top: -4px;
                                       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAMAAAAV+IX9AAAAGFBMVEX///+CgoKCgoKCgoKCgoKCgoKCgoKCgoKv/tvzAAAAB3RSTlMABAwPEBzZVjjBRAAAACpJREFUeAFjYAcBBhiAsxiReYxszMhyLGysQB4SYAILI+QY4PpYQBSymQAv/wDETgNE8gAAAABJRU5ErkJggg==);
