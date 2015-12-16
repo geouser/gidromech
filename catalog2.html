@@ -18,9 +18,9 @@
         
         <link rel="stylesheet" href="js/slick/slick.css">
 
-        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
         <link rel="stylesheet" href="css/general.css">
     </head>
     <body>
@@ -33,7 +33,7 @@
 
                 <div class="tel">
                     <a href="tel:+7 (812) 590-20-50">+7 (812) 590-20-50</a>
-                    <button>
+                    <button href="#call_back" class="magnific"> 
                         <img src="img/arrowButton.png" alt="">
                         <span>Заказать обратный звонок</span>
                     </button>
@@ -179,7 +179,7 @@
                             <div class="img_box vertical">
                                 <img src="img/equipment/item-01.jpg" alt="">
                             </div>
-                            <span class="title">Вакуумные плунжерные золотниковые агрегаты</span>
+                            <p class="title"><span>Вакуумные плунжерные золотниковые агрегаты</span></p>
                         </a>
                     </div>
                     <div class="eq_box -product">
@@ -187,7 +187,7 @@
                             <div class="img_box vertical">
                                 <img src="img/equipment/item-02.jpg" alt="">
                             </div>
-                            <span class="title">Вакуумные пластинчато-роторные насосы и агрегаты</span>
+                            <p class="title"><span>Вакуумные пластинчато-роторные насосы и агрегаты</span></p>
                         </a>
                     </div>
                     <div class="eq_box -product">
@@ -195,7 +195,7 @@
                             <div class="img_box vertical">
                                 <img src="img/equipment/item-03.jpg" alt="">
                             </div>
-                            <span class="title">Вакуумные винтовые безмасляные насосы</span>
+                            <p class="title"><span>Вакуумные винтовые безмасляные насосы</span></p>
                         </a>
                     </div>
                     <div class="eq_box -product">
@@ -203,7 +203,7 @@
                             <div class="img_box vertical">
                                 <img src="img/equipment/item-04.jpg" alt="">
                             </div>
-                            <span class="title">Вакуумные водокольцевые насосы</span>
+                            <p class="title"><span>Вакуумные водокольцевые насосы</span></p>
                         </a>
                     </div>
                     <div class="eq_box -product">
@@ -211,7 +211,7 @@
                             <div class="img_box vertical">
                                 <img src="img/equipment/item-05.jpg" alt="">
                             </div>
-                            <span class="title">Вакуумные бустерные двухроторные насосы типа Руст</span>
+                            <p class="title"><span>Вакуумные бустерные двухроторные насосы типа Руст</span></p>
                         </a>
                     </div>
                     <div class="eq_box -product">
@@ -219,7 +219,7 @@
                             <div class="img_box vertical">
                                 <img src="img/equipment/item-06.jpg" alt="">
                             </div>
-                            <span class="title">Вакуумные турбомолекулярные насосы серии F и FF</span>
+                            <p class="title"><span>Вакуумные турбомолекулярные насосы серии F и F</span>F</p>
                         </a>
                     </div>
                     <div class="eq_box -product">
@@ -227,7 +227,7 @@
                             <div class="img_box vertical">
                                 <img src="img/equipment/item-05.jpg" alt="">
                             </div>
-                            <span class="title">Сухие спиральные насосы</span>
+                            <p class="title"><span>Сухие спиральные насосы</span></p>
                         </a>
                     </div>
                     <div class="eq_box -product">
@@ -235,7 +235,7 @@
                             <div class="img_box vertical">
                                 <img src="img/equipment/item-06.jpg" alt="">
                             </div>
-                            <span class="title">Сухие мембранные вакуумные насосы</span>
+                            <p class="title"><span>Сухие мембранные вакуумные насосы</span></p>
                         </a>
                     </div>
                 </div> <!-- end wrap -->
@@ -267,7 +267,7 @@
                     </div>
                     <div class="col-4">
                         <a href="tel:+7 (812) 590-20-50" class="num">+7 (812) 590-20-50</a>
-                        <a href="#" class="href magnific recall">Обратный звонок</a>
+                        <a href="#call_back" class="href magnific recall">Обратный звонок</a>
                         <p class="mail">E-mail: <a href="mailto:mail@gidromeh.ru">mail@gidromeh.ru</a></p>
                         <form action="#" class="search">
                             <input type="text" name="query" placeholder="Поиск по сайту">
@@ -295,13 +295,25 @@
             </div> <!-- end footer -->
         </div><!-- end wrapper -->
 
-        <div id="modal-popup" class="mfp-hide zoom-anim-dialog"></div>
+        <div id="call_back" class="mfp-hide zoom-anim-dialog modal">
+            <h3>Заказать обратный звонок</h3>
+            <form action="#">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="phone" placeholder="Телефон">
+                <input type="text" name="time" placeholder="Удобное время звонка">
+                <button>Отправить заявку</button>
+            </form>
+        </div>
 
-        <script src="js/vendor/modernizr.js"></script>
-        <script src="js/vendor/jquery-1.11.3.min.js"></script>
-       
+        <div id="thanks" class="mfp-hide zoom-anim-dialog modal">
+            <h3>Спасибо!</h3>
+            <p> Ваша заявка отправлена, в ближайшее или указанное вами время, наши менеджеры свяжутся с вами.</p>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
         <script src="js/slick/slick.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
 
         <script src="js/main.js"></script>
     </body>
