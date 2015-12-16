@@ -17,10 +17,10 @@ jQuery(document).ready(function($) {
     type: 'inline',
 
     fixedContentPos: false,
-    fixedBgPos: true,
+    fixedBgPos: false,
 
     overflowY: 'auto',
-    modal: true,
+    modal: false,
 
     closeBtnInside: true,
     preloader: false,
