@@ -438,8 +438,7 @@ ul.sub li:before            {
 /*---------------------------------------------------------------*/
 
 /*------------------------- Our offer----------------------------*/
-.offers                             { text-align: justify; padding-bottom: 20px;}
-.offers:after                       { content: " "; width: 100%; display: inline-block;}
+.offers                             { padding-bottom: 20px; text-align: left;}
 
 .offer_box                          { width: 305px;
                                       display: inline-block;
@@ -451,17 +450,19 @@ ul.sub li:before            {
                                       border-radius: 5px;
                                       height: 200px;
                                       padding: 20px;
+                                      margin-bottom: 20px;
                                       -webkit-box-shadow: 0px 2px 3px 0px rgba(180,180,180,1);
                                       -moz-box-shadow: 0px 2px 3px 0px rgba(180,180,180,1);
                                       box-shadow: 0px 2px 3px 0px rgba(180,180,180,1);
                                       text-align: left;
                                       position: relative;}
+.offer_box:nth-child(3n-1)          { margin-right: 16px; margin-left: 16px}
 .offer_box h3                       { font: 18px 'open_sansbold';
                                       text-transform: uppercase;
                                       display: block;
                                       height: 50px;
                                       overflow: hidden;}
-.offer_box img                      { float: right;}
+.offer_box img                      { float: right; max-width: 108px; max-height: 115px;}
 .offer_box p                        { width: 155px;
                                       display: inline-block;
                                       font: 13px 'open_sansregular';
@@ -601,4 +602,152 @@ ul.sub li:before            {
 .copyrights p,
 .copyrights p a                    { font: 13px 'open_sansregular'; color: #000; display: inline;}
 .copyrights p a                    { border-bottom: 1px solid #dcdcdc;}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------*/
+/*----------------------- Catalog page --------------------------*/
+/*---------------------------------------------------------------*/
+.breadcrumbs                  { text-align: left; padding-top: 5px; border-top: 1px solid #dcdcdc; padding-bottom: 25px;}
+.breadcrumbs ul               { margin: 0;}
+.breadcrumbs ul li            { list-style: none;
+                                  display: inline-block;
+                                  font: 13px 'open_sansregular';
+                                  position: relative;}
+.breadcrumbs ul li:not(:last-child) a { color: #1f61ec;
+                                        text-decoration: underline;
+                                        padding-right: 20px;}
+.breadcrumbs ul li:not(:last-child):after {
+  content: " ";
+  width: 13px;
+  height: 7px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -3px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAHCAMAAADkrjcoAAAAGFBMVEX///+CgoKCgoKCgoKCgoKCgoKCgoKCgoKv/tvzAAAAB3RSTlMABAwPEBzZVjjBRAAAACFJREFUeAFjgANGIEZw2JiRuSxsrAwM7EiACVUOUx/CTAAaKgCLfr4OSAAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+}
+
+
+.breadcrumbs ul li:last-child a       { color: #000;}
+
+
+
+
+.equipment                          { text-align: left;}
+.equipment h2                       { margin-bottom: 20px; font: 36px 'open_sansbold'; text-transform: uppercase;}
+.eq_box                             { width: 305px;
+                                      display: inline-block;
+                                      vertical-align: top;
+                                      border-radius: 5px;
+                                      height: 333px;
+                                      vertical-align: top;
+                                      margin-bottom: 30px;
+                                      -webkit-box-shadow: 0px 2px 3px 0px rgba(180,180,180,1);
+                                      -moz-box-shadow: 0px 2px 3px 0px rgba(180,180,180,1);
+                                      box-shadow: 0px 2px 3px 0px rgba(180,180,180,1);
+                                      text-align: center;
+                                      position: relative;
+                                      z-index: 1;
+                                      background-color: #fff;}
+.eq_box a                           { display: block; height: 100%; width: 100%;}
+.eq_box:nth-child(3n+2)             { margin: 0 15px;}
+.eq_box .img_box                    { height: 270px; width: 100%; text-align: center;}
+.eq_box .img_box img                { display: inline-block;
+                                      vertical-align: middle;
+                                      max-width: 90%;
+                                      max-height: 90%;}
+.eq_box .title                      { font: 16px 'open_sansregular';
+                                        text-decoration: underline;
+                                        color: #000;
+                                        width: 100%;
+                                        display: block;
+                                        padding: 0 19px;}
+.eq_box:after                       { display: block;
+                                        width: 42px;
+                                        height: 42px;
+                                        content: " ";
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAABYlBMVEUgYuwhYuwxbu8zcO81cfA2cvA4c/A6dPA7dvE9d/E/ePFAefFCevJEfPJFffJHfvNIf/NKgPNLgfNNgvNOg/RPhPRQhfRShvRTh/RUh/VUiPVViPVWifX///8gYuwhY+wgYuwhYuwhY+wiY+0jZO0lZe0mZu0nZ+0oaO4qae4rau4ta+4ubO4wbe8xbu8zcO81cfA2cvA4c/A6dPA7dvE9d/E/ePFAefFCevJEfPJFffJHfvNIf/NKgPNLgfNNgvNOg/RPhPRQhfRShvRTh/RUh/VUiPVViPVWifUhYuwgYuwiY+0gYuwhYuwhY+wiY+0jZO0lZe0mZu0nZ+0oaO4qae4rau4ta+4ubO4wbe8xbu8zcO81cfA2cvA4c/A6dPA7dvE9d/E/ePFAefFCevJEfPJFffJHfvNIf/NKgPNLgfNNgvNOg/RPhPRQhfRShvRTh/RUh/VUiPVViPVWifX///+mvmBFAAAATHRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2Nj8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/xc/TeZQvOwAAANlJREFUOMuN1DkSwyAMBdDvhOxbldKTfZXvfxKfwG2u4AkpbBNsJNCvKN4IpGGU5fBi0U/mnWkEZagw0FV9k41TlxdZ6OiTLHT0QRY6eicLHb01UkGvrUzTSyeT9Oxkip7+MkGPnozTwpdR2pcxOpAROpQyDaRIQylRRgqUkzztyf0nQgc1I99leLtMg3eKNOxIokzvAuWmxFPi5snSHSdZumUlRzeePDA0c/t1XSTWpqu6Iquky6Ts6CItWzpXyIbONBIGwFQlawNMVBKlgdHJujJjlfyWVf4DeoxgNRIhmLoAAAAASUVORK5CYII=);
+                                        background-repeat: no-repeat;
+                                        background-size: 100%;
+                                        z-index: -1;}
+
+.eq_box:hover .title                { color: #1f61ec; text-decoration: none;}
+.eq_box:hover:after                 { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAMAAADyHTlpAAABfVBMVEUI6OAJ5t4J598K5N0K5d4L49wM4toN4dkO39gP3tcQ3dUR29QS2tIT2NEU1s8V1c4X08wY0coZz8kazscbzMUdysQeyMIfx8Agxb8hw70jwbskwLolvrgmvLcnu7UoubQpuLIqt7ErtbAstK8vr6ovsKv///8usasvr6oI6OAJ5t4J598K5N0K5d4L49wM4toN4dkO39gP3tcQ3dUR29QS2tIT2NEU1s8V1c4X08wY0coZz8kazscbzMUdysQeyMIfx8Agxb8hw70jwbskwLolvrgmvLcnu7UoubQpuLIqt7ErtbAstK8ts60usasusqwvr6ovsKsvsKsvr6ousqwI6OAJ5t4J598K5N0K5d4L49wM4toN4dkO39gP3tcQ3dUR29QS2tIT2NEU1s8V1c4X08wY0coZz8kazscbzMUdysQeyMIfx8Agxb8hw70jwbskwLolvrgmvLcnu7UoubQpuLIqt7ErtbAstK8ts60usasusqwvr6ovsKv////8CgQXAAAAVXRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2Nj8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/xc/TndbqkgAAAM5JREFUOMuN0j0OwjAMhuG3NMDAzBUqaHL/i6AKwRXYmRBhKIUmsRN7fvT5R+4G4E69BoB+g7H64AAMfhtwALEpnY8z7VtyH8CWuvNxoY1Zz2EeAqCzSANdZJv+ZJP+ZYuuZIOuZZ0mskpTWaOZrNBc6rSQKi2lRgWpUEnKNJHHR4VmmZ1O8+46LeZUabmRRoXdFSpdSabiPUUqSpHKUqJreajSJPNZo0p34V3acqEG+aUWOdPRInGmjQBuDk4+WujF4U2ZTG83mjKv02vzATKHHQnsFs6iAAAAAElFTkSuQmCC);}
+
+
+.link                               { text-align: left;}
+.link p                             { font: 20px 'open_sansregular'; color: #979797;}
+.link p:before                      { width: 20px;
+                                      height: 18px;
+                                      display: inline-block;
+                                      vertical-align: baseline;
+                                      content: " ";
+                                      margin-right: 10px;
+                                      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAMAAABsDg4iAAAAWlBMVEWCgoL///+CgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoJHTJi7AAAAHXRSTlMAAAIGBwkQERgeICEkKy84PlBkj6iq2drp9ff5/YkdmWwAAABuSURBVHjarY1HEoAwCEVjiSm2SOyR+19TiTMa48KNbwO8AT676DpfkoNbAnxIOxC9ICl6P1iGpiJSkqlvDTLk8Tn/SWanzEKZbzXJesvDTe0agNaVz596HadVx0FyWeQ7vSjidE8gFY9QyGZ8Me/TkAsi6Uo16QAAAABJRU5ErkJggg==);
+                                      background-repeat: no-repeat;
+                                      background-size: 100%;}
+.link p a                           { color: #000; border-bottom: 1px solid #dcdcdc;}
+
+
+
+
+
+
+
+/*---------------------------------------------------------------*/
+/*---------------------- Catalog-2 page -------------------------*/
+/*---------------------------------------------------------------*/
+.eq_box.-product                    { width: 225px; margin: 0 0 20px 0; height: 315px;}
+.eq_box.-product:nth-child(4n-2)    { margin: 0 15px;}
+.eq_box.-product:nth-child(4n-1)    { margin-right: 15px;}
+.eq_box.-product .img_box           { height: 205px;}
+.eq_box.-product .title             { border-bottom: none; text-decoration: underline;}
+
+.eq_box.-product:hover .title       { text-decoration: none;}
+
+
+
+
+
+/*---------------------------------------------------------------*/
+/*---------------------- Catalog-3 page -------------------------*/
+/*---------------------------------------------------------------*/
+.eq_box.-brand                      { height: 490px; overflow: hidden;}
+.eq_box.-brand .img_box             { height: 240px;}
+.eq_box.-brand .title               { color: #1f61ec; margin-bottom: 5px;}
+.eq_box.-brand .description         { font-size: 14px; color: #000; padding: 0 19px;}
+strong                              { font-family: 'open_sansbold'}
+
+
+.article p                          { margin-bottom: 25px; font-size: 16px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
