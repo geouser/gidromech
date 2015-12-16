@@ -41,7 +41,12 @@ body                          {    margin: 0;
                                        overflow-x: hidden;
                                    max-width: 100%;
                                    font-family: 'open_sansregular';
-                              }
+                                   background: rgb(213,255,254); /* Old browsers */
+                                    background: -moz-linear-gradient(top, rgba(213,255,254,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+                                    background: -webkit-linear-gradient(top, rgba(213,255,254,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                                    background: linear-gradient(to bottom, rgba(213,255,254,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5fffe', endColorstr='#ffffff',GradientType=0 );
+                                                                  }
 
 p                             {    color: #000;}
 h1, h2, h3, h4, h5, p         {    margin: 0; font-family: 'open_sansregular';}
@@ -101,8 +106,11 @@ header                         {    padding-top: 20px }
 .logo                          {    float: left;
                                     margin-top: 20px;
                                }
-.tel                           {    float: left }
-.headerImg                     {    float: right }
+.tel                           {    float: left; margin: 20px 0 0 100px;}
+.tel a                         {    font: 24px 'open_sansbold'; color: #000; text-decoration: none;}
+.tel button                    {    display: block; background: none; border: none;}
+.tel span                      {    color: #2C6CED; font-size: 13px; border-bottom: 1px dotted #2C6CED;}
+.headerImg                     {    float: right;}
 /* -----main menu -----*/
 nav                            {
                                    width: 100%;
@@ -198,6 +206,7 @@ nav>li>a:hover          {
                      }
 
 
+<<<<<<< HEAD
 ul.sub   {
     display: none;
     position: absolute;
@@ -225,6 +234,40 @@ ul.sub li a {
 }
 
 nav>li:hover ul.sub {display: inline-block;}
+ul.sub                       {
+                                 display: none;
+                                 position: absolute;
+                                 z-index: 3;
+                                 width: 235px;
+                                 padding: 20px;
+                                 left: 0;
+                                 top: 100%;
+                                 margin: 0;
+                                 background-color: #22C2BC;
+                                 -webkit-box-shadow: inset 0px 2px 5px 0px rgba(3,124,119,1);
+                                 -moz-box-shadow: inset 0px 2px 5px 0px rgba(3,124,119,1);
+                                 box-shadow: inset 0px 2px 5px 0px rgba(3,124,119,1);
+                                 -webkit-border-bottom-left-radius: 4px;
+                                 border-bottom-left-radius: 4px;
+                                 -webkit-border-bottom-right-radius: 4px;
+                                 border-bottom-right-radius: 4px;
+                             }
+ul.sub li a                  {
+                                 color: #FFF;
+                                 font: 13px 'open_sansbold';
+                                 text-decoration: underline;
+                                 display: block;
+                                 margin-bottom: 10px;
+                             }
+nav>li:hover ul.sub          {    display: inline-block }
+nav>li:nth-child(n+5) ul.sub {
+                                 left: auto;
+                                 right: 0;
+                             }
+nav>li:hover a               {
+                                 -webkit-border-radius: 0;
+                                 border-radius: 0;
+                             }
 /*---------------------------------------------------------------*/
 
 
