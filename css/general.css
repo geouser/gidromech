@@ -282,7 +282,7 @@ ul.sub li:before            {
 .previewitem              {
                               width: 134px;
                               float: left;
-                              margin: 35px 12px;
+                              margin: 35px 12px 0 12px;
                           }
 .previewitem .imgWrap     {
                               height: 100px;
@@ -309,74 +309,76 @@ ul.sub li:before            {
 /* --------------------------------------
    Slider
    -------------------------------------- */
-.slider {
-    width: 100%;
-    height: 335px;
-    border-bottom: 3px solid #B4B4B4;
-    -webkit-border-radius: 4px;
-            border-radius: 4px;
-    -webkit-box-shadow: 0px 37px 15px -32px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 37px 15px -32px rgba(0,0,0,0.5);
-    box-shadow: 0px 37px 15px -32px rgba(0,0,0,0.5);
-}   
-.slide {
-
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-}
-.slick-slider .slick-track, .slick-slider .slick-list {height: 100%;}
-
-.slick-dots           {bottom: 6px; margin: 0;}
-.slick-dots li        {height: auto; width: auto;}
-.slick-dots li button {
-    width: 12px;
-    height: 12px;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
-    background-color: #F0F0F0;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-}
-.slick-dots li.slick-active button {
-    background-color: #3672F0;
-}
-.slick-dots li button:before {display: none;}
-
-
-.slick-arrow {
-    top: 46%;
-    width: 26px;
-    height: 62px;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100% 100%;
-         -o-background-size: 100% 100%;
-            background-size: 100% 100%;
-}
-.slick-arrow:before {
-    display: none;
-}
-.slick-prev {
-    left: -3px;
-    z-index: 100;
-    background-image: url("../img/slider/arrowLeft.png");
-}
-.slick-next {
-    right: -3px;
-    z-index: 100;
-    background-image: url("../img/slider/arrowRight.png");
-}
-.slick-prev:hover, .slick-prev:active,  .slick-prev:focus {
-        background: url("../img/slider/arrowLeft.png");
-}
-.slick-next:hover, .slick-next:active,  .slick-next:focus {
-    background: url("../img/slider/arrowRight.png");
-}
+.sliderWrap                             {
+                                            border-top: 1px solid #dcdcdc;
+                                            padding-top: 30px;
+                                            margin: 30px 0;
+                                        }
+.slider                                 {
+                                            width: 100%;
+                                            height: 335px;
+                                            border-bottom: 3px solid #B4B4B4;
+                                            -webkit-border-radius: 4px;
+                                            border-radius: 4px;
+                                            -webkit-box-shadow: 0px 37px 15px -32px rgba(0,0,0,0.5);
+                                            -moz-box-shadow: 0px 37px 15px -32px rgba(0,0,0,0.5);
+                                            box-shadow: 0px 37px 15px -32px rgba(0,0,0,0.5);
+                                        }
+.slide                                  {
+                                            background-repeat: no-repeat;
+                                            background-position: 50% 50%;
+                                            -webkit-background-size: cover;
+                                            -o-background-size: cover;
+                                            background-size: cover;
+                                        }
+.slick-slider .slick-track, .slick-slider .slick-list
+                                        {    height: 100% }
+.slick-dots                             {
+                                            bottom: 6px;
+                                            margin: 0;
+                                        }
+.slick-dots li                          {
+                                            height: auto;
+                                            width: auto;
+                                        }
+.slick-dots li button                   {
+                                            width: 12px;
+                                            height: 12px;
+                                            -webkit-border-radius: 3px;
+                                            border-radius: 3px;
+                                            background-color: #F0F0F0;
+                                            -webkit-transform: rotate(45deg);
+                                            -moz-transform: rotate(45deg);
+                                            -ms-transform: rotate(45deg);
+                                            -o-transform: rotate(45deg);
+                                            transform: rotate(45deg);
+                                        }
+.slick-dots li.slick-active button      {    background-color: #3672F0 }
+.slick-dots li button:before            {    display: none }
+.slick-arrow                            {
+                                            top: 46%;
+                                            width: 26px;
+                                            height: 62px;
+                                            background-repeat: no-repeat;
+                                            -webkit-background-size: 100% 100%;
+                                            -o-background-size: 100% 100%;
+                                            background-size: 100% 100%;
+                                        }
+.slick-arrow:before                     {    display: none }
+.slick-prev                             {
+                                            left: -3px;
+                                            z-index: 100;
+                                            background-image: url("../img/slider/arrowLeft.png");
+                                        }
+.slick-next                             {
+                                            right: -3px;
+                                            z-index: 100;
+                                            background-image: url("../img/slider/arrowRight.png");
+                                        }
+.slick-prev:hover, .slick-prev:active, .slick-prev:focus
+                                        {    background: url("../img/slider/arrowLeft.png") }
+.slick-next:hover, .slick-next:active, .slick-next:focus
+                                        {    background: url("../img/slider/arrowRight.png") }
 /*---------------------------------------------------------------*/
 
 /*---------------------------------------------------------------*/
