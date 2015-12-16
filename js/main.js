@@ -7,6 +7,11 @@
 jQuery(document).ready(function($) {
 
 
+  $('.slider').slick({
+    autoPlay: true,
+    dots: true
+  });
+
 /*-----------------------------------------------------------------*/  
   $('.magnific').magnificPopup({
     type: 'inline',
