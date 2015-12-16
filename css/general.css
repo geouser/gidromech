@@ -224,7 +224,7 @@ ul.sub                       {
                                  position: absolute;
                                  z-index: 3;
                                  width: 235px;
-                                 padding: 20px;
+                                 padding: 20px 20px 10px 20px;
                                  left: 0;
                                  top: 100%;
                                  margin: 0;
@@ -244,6 +244,7 @@ ul.sub li a                   {
                                   font: 13px 'open_sansbold';
                                   text-decoration: none;
                                   border-bottom: 1px solid rgba(255, 255, 255, .5);
+                                  display: inline-block;
                                   margin-bottom: 10px;
                               }
 ul.sub li:before            {
