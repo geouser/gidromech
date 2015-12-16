@@ -385,10 +385,66 @@ ul.sub li:before            {
 
 /*---------------------------------------------------------------*/
 
+/*------------------------- Our offer----------------------------*/
+.offers                             { text-align: justify; padding-bottom: 20px;}
+.offers:after                       { content: " "; width: 100%; display: inline-block;}
+
+.offer_box                          { width: 305px;
+                                      display: inline-block;
+                                      vertical-align: top;
+                                      background: #ffffff; /* Old browsers */
+                                      background: -moz-linear-gradient(top, #ffffff 0%, #fafafa 100%); /* FF3.6-15 */
+                                      background: -webkit-linear-gradient(top, #ffffff 0%,#fafafa 100%); /* Chrome10-25,Safari5.1-6 */
+                                      background: linear-gradient(to bottom, #ffffff 0%,#fafafa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                      border-radius: 5px;
+                                      height: 200px;
+                                      padding: 20px;
+                                      -webkit-box-shadow: 0px 2px 3px 0px rgba(180,180,180,1);
+                                      -moz-box-shadow: 0px 2px 3px 0px rgba(180,180,180,1);
+                                      box-shadow: 0px 2px 3px 0px rgba(180,180,180,1);
+                                      text-align: left;
+                                      position: relative;}
+.offer_box h3                       { font: 18px 'open_sansbold';
+                                      text-transform: uppercase;
+                                      display: block;}
+.offer_box img                      { float: right;}
+.offer_box p                        { width: 155px;
+                                      display: inline-block;
+                                      font: 13px 'open_sansregular';
+                                      color: #4f4f4f;
+                                      margin-top: 5px;
+                                      overflow: hidden;}
+.offer_box a                        { padding: 5px 10px;
+                                      text-transform: uppercase;
+                                      font: 11px 'open_sansregular';
+                                      color: #fff;
+                                      background: #5689f5; /* Old browsers */
+                                      background: -moz-linear-gradient(top, #5689f5 0%, #1f61ec 100%); /* FF3.6-15 */
+                                      background: -webkit-linear-gradient(top, #5689f5 0%,#1f61ec 100%); /* Chrome10-25,Safari5.1-6 */
+                                      background: linear-gradient(to bottom, #5689f5 0%,#1f61ec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+                                      border-radius: 4px;
+                                      position: absolute;
+                                      left: 20px;
+                                      bottom: 20px;
+                                      -webkit-box-shadow: 0px 1px 2px 0px rgba(10,56,153,1);
+                                      -moz-box-shadow: 0px 1px 2px 0px rgba(10,56,153,1);
+                                      box-shadow: 0px 1px 2px 0px rgba(10,56,153,1);}
+
+.offer_box a:after                  { content: " ";
+                                      width: 6px;
+                                      height: 6px;
+                                      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAMAAADXEh96AAAADFBMVEX////////////////1pQ5zAAAAA3RSTlMAMXhi9TpiAAAAFklEQVR4AWMAAUZm7BQjEDAxMzCDAQACXQAsj64TCgAAAABJRU5ErkJggg==);
+                                      background-position: 90% 90%;
+                                      background-repeat: no-repeat;
+                                      position: absolute;
+                                      bottom: 4px;
+                                      right: 5px;}
+
+
+
 
 
 /*-------------------------- Footer -----------------------------*/
-
 .site_info                         { padding: 30px 0;
                                       border-top: 1px solid #dcdcdc;
                                       text-align: left;
