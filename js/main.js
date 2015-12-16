@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
 
 
   $('.slider').slick({
-    autoPlay: true,
+    autoplay: true,
     dots: true
   });
 
