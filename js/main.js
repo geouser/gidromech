@@ -7,6 +7,29 @@
 jQuery(document).ready(function($) {
 
 
+  $('.gallery').each(function() { // the containers for all your galleries
+      $(this).magnificPopup({
+          delegate: 'a', // the selector for gallery item
+          type: 'image',
+          gallery: {
+            enabled:true
+          },
+            callbacks: {
+    
+            buildControls: function() {
+              // re-appends controls inside the main container
+              this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+                  }
+            }
+      });
+  });
+
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+
+
+
   $('.mainSlider').slick({
     autoplay: true,
     dots: true
