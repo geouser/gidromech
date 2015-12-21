@@ -104,17 +104,6 @@ a                           {-webkit-transition: all .2s;
                               -ms-transition: all .2s;
                                -o-transition: all .2s;
                                   transition: all .2s;}
-@media (max-width: 1250px) {
-}
-@media (max-width: 800px) {
-}
-@media (max-width: 660px) {
-}
-@media (max-width: 570px) {
-}
-@media (max-width: 360px) {
-}
-
 
 /* --------------------------------------
    Custom Styles
@@ -148,6 +137,7 @@ header                         {    padding-top: 20px }
                                             transition: all .2s;
                                }
 .tel:hover  span               {    border-bottom: none;}
+
 .headerImg                     {    float: right;}
 /* -----main menu -----*/
 .nav                            {
@@ -278,6 +268,7 @@ ul.sub li a                   {
                                   display: inline-block;
                                   margin-bottom: 10px;
                               }
+ul.sub li a:hover           {     opacity: .8;}
 ul.sub li:before            {
                                   content: "";
                                   display: inline-block;
@@ -404,8 +395,8 @@ ul.subcategory li a {
                                       transition: all .2s;
                           }
 
-.previewitem:hover span            { border-bottom: 1px solid transparent;}
 
+.previewitem:hover span            { border-bottom: 1px solid transparent;}
 /* --------------------------------------
    Slider
    -------------------------------------- */
@@ -654,7 +645,9 @@ ul.subcategory li a {
                                            -o-transition: all .2s;
                                               transition: all .2s;
                                       }
+
 .recall:hover                       { border-bottom: 1px dotted transparent;}
+
 .recall:before                      { content: " ";
                                       position: absolute;
                                       width: 13px;
@@ -666,6 +659,7 @@ ul.subcategory li a {
                                       background-size: content;}
 .site_info .mail                    { margin-bottom: 30px;}
 .site_info .mail a                  { color: #1f61ec; }
+
 .site_info .mail a:hover            { border-bottom: 1px dotted #1f61ec;}
 
 
